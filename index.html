@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品作品集与方法论笔记</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-2: #4b5563;
+    --ink-3: #6b7280;
+    --line: #e5e7eb;
+    --line-2: #d1d5db;
+    --accent: #185fa5;
+    --surface: #fafafa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 28px; font-weight: 500; letter-spacing: -0.01em; }
+  .role { margin-top: 8px; font-size: 15px; color: var(--ink-3); }
+  .intro { margin-top: 20px; font-size: 15px; color: var(--ink-2); max-width: 640px; }
+  .meta { margin-top: 20px; font-size: 13px; color: var(--ink-3); }
+  .meta a { color: var(--accent); text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 13px; font-weight: 500; color: var(--ink-3); letter-spacing: 0.06em; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    background: #fff;
+    transition: border-color 0.15s ease;
+  }
+  .card:hover { border-color: var(--line-2); }
+  .card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+  .card p { font-size: 13px; color: var(--ink-2); }
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-size: 12px;
+    color: var(--ink-3);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .list { border-top: 1px solid var(--line); }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .item h3 { font-size: 15px; font-weight: 400; }
+  .item p { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+  .status { font-size: 12px; color: var(--ink-3); white-space: nowrap; }
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  footer { padding: 40px 0 64px; font-size: 13px; color: var(--ink-3); }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    header { padding-top: 48px; }
+    .item { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>mumugaoer</h1>
+    <p class="role">产品经理 · 项目负责人</p>
+    <p class="intro">
+      长期从事企业级业务系统的产品设计与交付，覆盖合同全生命周期管理、履约协同与经营风险可视化。
+      习惯从业务现场出发，把模糊的管理诉求拆解为可落地的字段、流程与界面，并对交付结果负责。
+    </p>
+    <p class="meta">
+      GitHub: <a href="https://github.com/mumugaoer">github.com/mumugaoer</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>作品集</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ToB 合同管理系统</h3>
+        <p>覆盖起草、审批、履约、台账报表的全流程设计，统一字段与交互规范，支撑多业态合同场景。</p>
+        <div class="tags"><span class="tag">流程设计</span><span class="tag">字段规范</span><span class="tag">台账报表</span></div>
+      </div>
+      <div class="card">
+        <h3>经营风险驾驶舱</h3>
+        <p>将分散的风险指标整合为单层可视界面，明确口径、层级与下钻路径，减少管理层的判断成本。</p>
+        <div class="tags"><span class="tag">指标口径</span><span class="tag">数据可视化</span><span class="tag">决策支持</span></div>
+      </div>
+      <div class="card">
+        <h3>合同智能匹配工具</h3>
+        <p>解析存量合同文档并提取关键字段，支持模板生成与批量比对，替代人工逐份核对。</p>
+        <div class="tags"><span class="tag">文档解析</span><span class="tag">字段匹配</span><span class="tag">效率工具</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>方法论笔记</h2>
+    <div class="list">
+      <div class="item">
+        <div>
+          <h3>ToB 系统的字段设计原则</h3>
+          <p>为什么字段口径不一致会让报表反复返工，以及如何在需求阶段就锁定它。</p>
+        </div>
+        <span class="status">待发布</span>
+      </div>
+      <div class="item">
+        <div>
+          <h3>履约模块的三段式拆解</h3>
+          <p>把"计划—执行—结果"拆开设计，以及外部系统数据回传时的边界处理。</p>
+        </div>
+        <span class="status">待发布</span>
+      </div>
+      <div class="item">
+        <div>
+          <h3>报表需求如何避免反复返工</h3>
+          <p>从管理诉求到可交付报表之间，需要补齐的三次确认。</p>
+        </div>
+        <span class="status">待发布</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>关于内容边界</h2>
+    <p class="note">
+      本站仅呈现可公开的方法论与脱敏后的设计思路，不涉及任何企业标识、真实业务数据与内部系统细节。
+    </p>
+  </section>
+
+  <footer>
+    <p>本站由 GitHub Pages 托管 · <a href="https://github.com/mumugaoer/mumugaoer.github.io">查看源码</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
