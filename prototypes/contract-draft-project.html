@@ -28,11 +28,11 @@
 
   .pl{border-right:1px solid var(--line);display:flex;flex-direction:column;min-width:0;background:#fafbfd;}
   .lhd{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--line);}
-  .lhd .t{font-size:13px;font-weight:700;}
+  .lhd .t{font-size:13px;font-weight:600;}
   .lhd .tools{display:flex;gap:12px;font-size:12px;color:var(--b1);}
   .lbar{display:flex;align-items:center;gap:14px;padding:7px 12px;border-bottom:1px solid var(--line);
         font-size:12px;color:var(--sub);background:#fff;flex-wrap:wrap;}
-  .lbar .on{color:var(--b1);font-weight:700;}
+  .lbar .on{color:var(--b1);font-weight:600;}
   .toolbar{display:flex;align-items:center;gap:4px;padding:6px 10px;border-bottom:1px solid var(--line);
            background:#fff;font-size:12px;color:#606266;flex-wrap:wrap;}
   .tb{min-width:24px;height:24px;padding:0 5px;border:1px solid transparent;border-radius:3px;
@@ -45,13 +45,13 @@
   .pr{display:flex;flex-direction:column;min-width:0;}
   .rtabs{display:flex;gap:18px;padding:9px 14px 0;border-bottom:1px solid var(--line);}
   .rtabs span{font-size:14px;padding-bottom:7px;color:var(--sub);}
-  .rtabs span.on{color:var(--b1);font-weight:700;box-shadow:inset 0 -2px 0 var(--b1);}
+  .rtabs span.on{color:var(--b1);font-weight:600;box-shadow:inset 0 -2px 0 var(--b1);}
   .rbody{padding:8px 12px 16px;overflow:auto;}
 
   .sect{border:1px solid #eef1f6;border-radius:4px;margin-bottom:8px;background:#fff;}
   .sect-hd{display:flex;align-items:center;justify-content:space-between;background:#F7F8FA;
            padding:7px 10px;border-bottom:1px solid #eef1f6;border-radius:4px 4px 0 0;}
-  .sect-hd .t{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:#303133;}
+  .sect-hd .t{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:#303133;}
   .sect-hd .t:before{content:"";width:3px;height:13px;background:var(--b1);border-radius:1px;}
   .sect-hd .tg{font-size:12px;color:#2978FF;}
   .sect-bd{padding:11px 11px 6px;}
@@ -121,7 +121,7 @@
   .rops span.dis{color:#C0C4CC;cursor:not-allowed;text-decoration:none;}
   .rops-dis{color:#C0C4CC;font-size:13px;}
   th{white-space:nowrap;}
-  th{position:sticky;top:0;background:#F7F8FA;color:#7484A5;font-size:12px;text-align:left;
+  th{position:sticky;top:0;background:#F7F8FA;color:#7484A5;font-size:12px;font-weight:600;text-align:left;
      padding:8px 9px;border-bottom:1px solid #eef1f6;white-space:nowrap;}
   td{padding:8px 9px;border-bottom:1px solid #f2f4f8;vertical-align:middle;}
   tbody tr:hover{background:#F7F8FA;}
@@ -171,7 +171,7 @@
   .gpop .gb{padding:0 20px 4px;font-size:12.4px;color:#606266;line-height:1.75;}
   .gpop .li{padding:6px 0;border-bottom:1px dashed #eef1f6;}
   .gpop .li:last-child{border-bottom:none;}
-  .gpop .gb b{color:#1f2937;}
+  .gpop .gb .gt{color:#1f2937;}
   .gpop .gf{display:flex;justify-content:flex-end;padding:12px 20px 18px;}
 
   .toast{display:none;position:fixed;left:50%;top:24px;transform:translateX(-50%);z-index:95;
@@ -209,7 +209,7 @@
   tr.rnew{display:none;}
   body:has(#pNew:checked) tr.rnew{display:table-row;}
 
-    box-shadow:inset 0 -2px 0 var(--b1);font-weight:700;}
+    box-shadow:inset 0 -2px 0 var(--b1);font-weight:600;}
 
   .hint{max-width:1240px;margin:10px auto 0;font-size:11.8px;color:#94a3b8;}
   @media (max-width:1080px){.ws{grid-template-columns:1fr;} .pl{border-right:none;border-bottom:1px solid var(--line);}}
@@ -333,27 +333,27 @@
           <tbody>
             <tr class="rnew">
               <td><label class="lbl" for="pNew"><span class="rd"></span></label></td>
-              <td><label class="lbl" for="pNew"><b>厂区道路标线翻新</b></label></td><td>合同系统</td>
+              <td><label class="lbl" for="pNew">厂区道路标线翻新</label></td><td>合同系统</td>
               <td>CUS-2026-0008</td><td>2026</td><td class="tfull">2026-11-03 11:20</td><td>宁国水泥厂</td><td><span class="st">在建</span></td><td><div class="rops"><span>编辑</span><span>删除</span></div></td>
             </tr>
             <tr class="r1 s-on">
               <td><label class="lbl" for="p1"><span class="rd"></span></label></td>
-              <td><label class="lbl" for="p1"><b>宁国厂区道路维修工程</b></label></td><td>主数据平台</td>
+              <td><label class="lbl" for="p1">宁国厂区道路维修工程</label></td><td>主数据平台</td>
               <td>XM-2026-0031</td><td>2026</td><td class="tfull">2026-11-02 09:15</td><td>宁国水泥厂</td><td><span class="st">在建</span></td><td><span class="rops-dis">—</span></td>
             </tr>
             <tr class="r2 s-on">
               <td><label class="lbl" for="p2"><span class="rd"></span></label></td>
-              <td><label class="lbl" for="p2"><b>宁国厂区道路维修工程（二期）</b></label></td><td>主数据平台</td>
+              <td><label class="lbl" for="p2">宁国厂区道路维修工程（二期）</label></td><td>主数据平台</td>
               <td>XM-2025-0088</td><td>2025</td><td class="tfull">2026-10-28 14:03</td><td>宁国水泥厂</td><td><span class="st">在建</span></td><td><span class="rops-dis">—</span></td>
             </tr>
             <tr class="r3 s-pause">
               <td><label class="lbl" for="p3"><span class="rd"></span></label></td>
-              <td><label class="lbl" for="p3"><b>荻港码头皮带廊道改造</b></label></td><td>主数据平台</td>
+              <td><label class="lbl" for="p3">荻港码头皮带廊道改造</label></td><td>主数据平台</td>
               <td>XM-2026-0047</td><td>2026</td><td class="tfull">2026-11-01 08:40</td><td>荻港海螺</td><td><span class="st pause">暂停</span></td><td><span class="rops-dis">—</span></td>
             </tr>
             <tr class="s-done dis">
               <td><span class="rd" style="background:#f1efe8;border-color:#d8d3c8;"></span></td>
-              <td><b>铜陵熟料线窑尾收尘技改</b></td><td>主数据平台</td>
+              <td>铜陵熟料线窑尾收尘技改</td><td>主数据平台</td>
               <td>XM-2025-0118</td><td>2025</td><td class="tfull">2026-06-30 17:25</td><td>铜陵海螺</td><td><span class="st done">已完工</span></td><td><span class="rops-dis">—</span></td>
             </tr>
           </tbody>
@@ -392,7 +392,7 @@
       </div>
       <label class="ackrow">
         <input type="checkbox" id="ack">
-        我已与<b>项目主管部门核对无误</b>：该项目在投资项目主数据中确实不存在，同意在合同侧新增。
+        我已与项目主管部门核对无误：该项目在投资项目主数据中确实不存在，同意在合同侧新增。
       </label>
       <div class="mft">
         <label class="sb gh" for="mk">取消</label>
@@ -404,9 +404,9 @@
   <div class="gpop">
     <div class="gh">项目数据说明<label class="x" for="guide">×</label></div>
     <div class="gb">
-      <div class="li"><b>原则：合同系统不管理项目</b><br>项目数据统一取自<b>主数据平台 · 投资项目主数据</b>，合同侧只读引用。<b>起草页只需选择「项目名称」一个字段</b>；项目编码、项目状态、项目单位、立项年度均由系统<b>自动带出</b>，无需手工录入，也不可修改。</div>
-      <div class="li"><b>自定义项目</b><br>未纳入主数据平台管理的项目（临时性工程、公司自建项目等），可在合同侧创建<b>自定义项目</b>并直接引用。<b>仅合同侧自用，不同步主数据平台</b>；编码由系统自动生成（<code>CUS-年份-流水号</code>），创建后<b>全集团可见</b>。</div>
-      <div class="li"><b>权限</b><br>创建前须与<b>项目主管部门核对无误</b>。经办人可<b>创建、编辑</b>（含修改项目状态）；<b>本公司的合同管理员可删除</b>——<b>未被引用的可删，已被合同引用的不可删</b>。操作留痕可查。</div>
+      <div class="li"><span class="gt">原则：合同系统不管理项目</span><br>项目数据统一取自主数据平台 · 投资项目主数据，合同侧只读引用。起草页只需选择「项目名称」一个字段；项目编码、项目状态、项目单位、立项年度均由系统自动带出，无需手工录入，也不可修改。</div>
+      <div class="li"><span class="gt">自定义项目</span><br>未纳入主数据平台管理的项目（临时性工程、公司自建项目等），可在合同侧创建自定义项目并直接引用。仅合同侧自用，不同步主数据平台；编码由系统自动生成（<code>CUS-年份-流水号</code>），创建后全集团可见。</div>
+      <div class="li"><span class="gt">权限</span><br>创建前须与项目主管部门核对无误。经办人可创建、编辑（含修改项目状态）；本公司的合同管理员可删除——未被引用的可删，已被合同引用的不可删。操作留痕可查。</div>
     </div>
     <div class="gf"><label class="sb pri" for="guide">我知道了</label></div>
   </div>
